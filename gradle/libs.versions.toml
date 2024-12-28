@@ -54,6 +54,8 @@ retrofit2 = "2.9.0"
 rome = "1.18.0"
 telephoto = "0.7.1"
 swipe = "1.3.0"
+firebasePlugin = "4.4.2"
+firebaseBom = "33.7.0"
 
 [libraries]
 # AboutLibraries
@@ -125,6 +127,9 @@ espresso = { group = "androidx.test.espresso", name = "espresso-core", version.r
 mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockitoCore" }
 mockito-junit-jupiter = { group = "org.mockito", name = "mockito-junit-jupiter", version.ref = "mockitoJUnitJupiter" }
 mockito-kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref = "mockitoKotlin" }
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging-ktx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
@@ -134,3 +139,4 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 aboutlibraries = { id = "com.mikepenz.aboutlibraries.plugin", version.ref = "aboutLibsRelease" }
 room = { id = "androidx.room", version.ref = "room" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hiltAndroid" }
+firebase = { id = "com.google.gms.google-services", version.ref = "firebasePlugin" }

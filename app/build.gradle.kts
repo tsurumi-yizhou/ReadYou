@@ -8,6 +8,7 @@ plugins {
     alias(libs.plugins.aboutlibraries)
     alias(libs.plugins.room)
     alias(libs.plugins.hilt)
+    id("com.google.gms.google-services")
 }
 
 fun fetchGitCommitHash(): String {
@@ -183,4 +184,8 @@ dependencies {
     testImplementation(libs.mockito.core)
     testImplementation(libs.mockito.junit.jupiter)
     testImplementation(libs.mockito.kotlin)
+
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.messaging)
 }
